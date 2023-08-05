@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { Line } from 'react-chartjs-2';
+import React, { useEffect, useRef } from 'react';
+// import { Line } from 'react-chartjs-2';
 import { ChartData, ChartOptions } from 'chart.js';
 import Chart from 'chart.js/auto';
 
@@ -14,6 +14,7 @@ interface CustomChartOptions extends ChartOptions {
       align: string;
       anchor: string;
     };
+    
   };
 }
 

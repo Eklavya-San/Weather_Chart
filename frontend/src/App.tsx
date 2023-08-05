@@ -17,15 +17,19 @@ const App: React.FC = () => {
     };
 
     fetchWeatherData();
+    const intervalId = setInterval(fetchWeatherData, 60000);
+
+    // Clean up interval when the component unmounts
+    return () => clearInterval(intervalId);
   }, []); // Empty dependency array to run the effect only once
 
   return (
     <div className="App">
-      <h1>Wathare Infotech Solutions</h1> {/* Add the heading */}
+      <h1>Wathare Infotech Solutions</h1> 
       <div className="WeatherChartContainer">
         <WeatherChart weatherData={weatherData} />
       </div>
-      <div className="Footer">
+      <div className="App">
         <h3>Automatically new data will update in 1 min</h3>
         <p>Name: Eklavya Shivaji Ghodake</p>
         <p>CCPPID: PD0345</p>

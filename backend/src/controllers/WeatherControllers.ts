@@ -3,7 +3,7 @@ import { Request, Response } from 'express';
 import WeatherData from '../models/WeatherData';
 
 
-
+//function to find/get 10000000 records from database 
 export const getWeatherData = async (_: Request, res: Response) => {
   try {
     const weatherData = await WeatherData.find().sort({ timestamp: 1 }).limit(10000000);

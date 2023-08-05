@@ -1,21 +1,21 @@
 /* Add the following CSS rules to align the chart on the left side */
 .App {
-  /* display: flex; */
+  display: flexbox;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 1rem;
   background-color: black;
   color: aliceblue;
 }
 
 .WeatherChartContainer {
-  flex: 3; /* Take 3/4 of the available space */
+  flex: 3; 
   /* padding: 1rem; */
   border: 1px solid #ccc;
   background-color: whitesmoke;
   margin-right: 1rem;
-  height: 80%;
+  /* height: 100%; */
   width: 80%;
 }
